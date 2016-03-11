@@ -1,0 +1,226 @@
+* {
+	box-sizing: border-box;
+}
+
+nav {
+	font-family: 'Oswald', sans-serif;
+}
+
+.nav li a {
+  position: relative;
+}
+
+.nav li a:before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  width: 95%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.nav-shadow {
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+.banner {
+	margin-top: 50px;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+	background-image: url('../img/banner-01.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner img {
+	width: 100%;
+}
+
+nav button {
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.register {
+	margin-left: 5px;
+}
+
+main {
+	background: #ebebeb;
+}
+
+.title {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.color {
+	position: relative;
+	margin: 15px 0;
+	padding: 0;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.line {
+    position: relative;
+    width: 80%;
+    height: 1px;
+    margin: 2.6vw auto 2vw;
+    border: 0px none;
+    background: linear-gradient(to right, 
+    	rgba(204, 204, 204, 0) 0%, 
+    	#cccccc 25%, 
+    	#cccccc 35%, 
+    	rgba(204, 204, 204, 0) 45%, 
+    	rgba(204, 204, 204, 0) 55%, 
+    	#cccccc 65%, 
+    	#cccccc 75%, 
+    	rgba(204, 204, 204, 0) 100%
+    );
+}
+
+.line:after{
+	content: "•••";
+	position: absolute;
+	width: 10%;
+	padding-left: 1vw;
+	margin-left: -0.5vw;
+	left: 45%;
+	top: -1.5vw;
+	font-weight: 300;
+	font-size: 2vw;
+	font-family: "Open Sans", sans-serif;
+	letter-spacing: 1vw;
+	text-align: center;
+	color: #999;
+}
+
+.object {
+	height: 480px;
+	overflow: hidden;
+	position: relative;
+}
+
+.object img {
+	transition: 300ms;
+}
+
+.info {
+	width: 50px;
+	height: 50px;
+	background-color: #F36161;
+	border: 1px solid transparent;
+	border-radius: 30px;
+	display: block;
+	padding: 13px 0 0;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	top: -15px;
+	left: -15px;
+	font-family: 'Kaushan Script', cursive;
+	transition: 200ms;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.information {
+	position: absolute;
+	bottom: -100px;
+	width: 100%;
+	height: 100px;
+	color: #fff;
+	background-color: rgba(61, 61, 77, 0.8);
+	margin: 0;
+	z-index: 10;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	text-shadow: 1px -1px 1px rgba(150, 150, 150, 0.8);
+	transition: 300ms;
+}
+
+.color:hover .info {
+	background-color: #E31F1F;
+	border-color: #787373;
+}
+
+.object:hover img {
+	transform: scale(1.2);
+}
+
+.object:hover .information {
+	bottom: 0;
+}
+
+.events {
+	margin: 10px 0;
+	height: 300px;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	padding-top: 70px;
+	transition: 500ms;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.events p {
+	margin-top: 50px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 500ms;
+}
+
+.events p a {
+	text-decoration: none;
+}
+
+.events p a:link, .events p a:visited {
+	color: #fff;
+}
+
+.events p a:focus {
+	outline: none;
+}
+
+#behind {
+	background-image: url('../img/behind.jpg');
+	background-size: cover;
+}
+
+#guide {
+	background-image: url('../img/guide.jpg');
+	background-size: cover;
+}
+
+.events:hover {
+	-webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    padding-top: 150px;
+}
+
+.events:hover p {
+	margin-top: 0;
+	visibility: visible;
+	opacity: 1;
+}
+
+footer {
+	background-color: #E1E1E1;
+}
