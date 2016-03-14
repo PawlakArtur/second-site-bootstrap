@@ -15,7 +15,7 @@
 <body>
 <nav class="navbar navbar-default navbar-fixed-top nav-shadow">
   	<div class="container">
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+		<div class="collapse navbar-collapse navbar-relative" id="bs-example-navbar-collapse-6">
 			<ul class="nav navbar-nav">
 				<li role="presentation"><a href="#">Home</a></li>
 				<li class="dropdown">
@@ -29,8 +29,34 @@
 		        </li>
 				<li role="presentation"><a href="#">Contact</a></li>
 			</ul>
-			<button type="button" class="btn btn-success navbar-btn pull-right register">Register</button>
-			<button type="button" class="btn btn-info navbar-btn pull-right">Sign in</button>
+			<!-- <form id="signin" class="navbar-form navbar-right" role="form">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					<input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+					<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form> -->
+			<button type="button" class="btn btn-success navbar-btn pull-right" role="button" data-toggle="collapse" href="#register" aria-expanded="false" aria-controls="collapseExample">Register</button>
+			<button type="button" class="btn btn-info navbar-btn pull-right" role="button" data-toggle="collapse" href="#register" aria-expanded="false" aria-controls="collapseExample">Sign in</button>
+			<div id="register" class="collapse reg-log-form">
+				<form id="signin" class="navbar-form" role="form">
+					<div class="input-group input-position">
+						<label id="placeholder-01" class="placeholder-text">email address</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input id="input-01" type="email" class="form-control" name="email" value="" placeholder="">
+					</div>
+					<div class="input-group input-position">
+						<label id="placeholder-02" class="placeholder-text">password</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input id="input-02" type="password" class="form-control" name="password" value="" placeholder="">
+					</div>
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </nav>
@@ -134,5 +160,6 @@
 <footer>
 <div class="container"><p class="pull-right">Copyright &#169 2016 Artur Pawlak</p></div>
 </footer>
+<script src="scripts/main.js"></script>
 </body>
 </html>

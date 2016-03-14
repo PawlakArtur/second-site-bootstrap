@@ -38,6 +38,47 @@ nav {
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
 }
 
+.navbar-relative {
+	position: relative;
+}
+
+nav button {
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.navbar-relative button {
+	margin-left: 5px;
+}
+
+.reg-log-form {
+	font-family: 'Ubuntu Condensed', sans-serif;
+	position: absolute;
+	top: 51px;
+	right: 0px;
+	padding: 20px;
+	background-color: #f8f8f8;
+	border: 1px solid #e7e7e7;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.75);
+}
+
+.navbar-form .input-position {
+	margin: 0 0 25px;
+	display: table;
+}
+
+.placeholder-text {
+	z-index: 10;
+	position: absolute;
+	top: 5px;
+	left: 52px;
+	opacity: 0.5;
+	cursor:text;
+}
+
 .banner {
 	margin-top: 50px;
 	width: 100%;
@@ -50,14 +91,6 @@ nav {
 
 .banner img {
 	width: 100%;
-}
-
-nav button {
-	font-family: 'Ubuntu Condensed', sans-serif;
-}
-
-.register {
-	margin-left: 5px;
 }
 
 main {
