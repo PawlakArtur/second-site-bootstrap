@@ -29,17 +29,6 @@
 		        </li>
 				<li role="presentation"><a href="#">Contact</a></li>
 			</ul>
-			<!-- <form id="signin" class="navbar-form navbar-right" role="form">
-				<div class="input-group">
-					<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-					<input id="email" type="email" class="form-control" name="email" value="" placeholder="Email Address">
-				</div>
-				<div class="input-group">
-					<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-					<input id="password" type="password" class="form-control" name="password" value="" placeholder="Password">
-				</div>
-				<button type="submit" class="btn btn-primary">Login</button>
-			</form> -->
 			<button type="button" class="btn btn-success navbar-btn pull-right" role="button" data-toggle="collapse" href="#register" aria-expanded="false" aria-controls="collapseExample">Register</button>
 			<button type="button" class="btn btn-info navbar-btn pull-right" role="button" data-toggle="collapse" href="#register" aria-expanded="false" aria-controls="collapseExample">Sign in</button>
 			<div id="register" class="collapse reg-log-form">
@@ -58,6 +47,41 @@
 				</form>
 			</div>
 		</div>
+
+		<div class="collapse navbar-collapse visible-xs hidden-sm hidden-md hidden-lg" id="bs-example-navbar-collapse-1">
+	    	<ul class="nav navbar-nav visible-xs-inline-block">
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+			        <li role="presentation"><a href="#">Home</a></li>
+			        <li role="separator" class="divider"></li>
+			        <li role="presentation"><a href="#">Womens</a></li>
+			        <li role="presentation"><a href="#">Mens</a></li>
+			        <li role="presentation"><a href="#">Sales</a></li>
+			        <li role="separator" class="divider"></li>
+					<li role="presentation"><a href="#">Contact</a></li>
+		          </ul>
+		        </li>
+	    	</ul>
+	    	<button type="button" class="btn btn-success navbar-btn pull-right visible-xs-inline-block" role="button" data-toggle="collapse" href="#register-02" aria-expanded="false" aria-controls="collapseExample">Register</button>
+			<button type="button" class="btn btn-info navbar-btn pull-right visible-xs-inline-block" role="button" data-toggle="collapse" href="#register-02" aria-expanded="false" aria-controls="collapseExample">Sign in</button>
+			<div id="register-02" class="collapse reg-log-form">
+				<form id="signin" class="navbar-form" role="form">
+					<div class="input-group input-position">
+						<label id="placeholder-03" class="placeholder-text">email address</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+						<input id="input-03" type="email" class="form-control" name="email" value="" placeholder="">
+					</div>
+					<div class="input-group input-position">
+						<label id="placeholder-04" class="placeholder-text">password</label>
+						<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+						<input id="input-04" type="password" class="form-control" name="password" value="" placeholder="">
+					</div>
+					<button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
+	    </div>
+
 	</div>
 </nav>
 <div class="container banner"></div>
@@ -69,70 +93,82 @@
 				<h1 class="text-center title">New collection</h1>
 				<hr class="line"></hr>
 			</div>
-			<div class="col-lg-4 color">
-				<div class="info">NEW</div>
-				<div id="object-1" class="object">
-					<div class="information">
-						<h4 class="text-center">Garnitur męski model XYNA</h4>
-						<p class="text-center">dostępny w wielu rozmiarach</p>
-						<p class="text-center">cena: 1720 zł</p>
+			<div class="col-sm-6 col-lg-4">
+				<div class="color">
+					<div class="info">NEW</div>
+					<div id="object-1" class="object">
+						<div class="information">
+							<h4 class="text-center">Garnitur męski model XYNA</h4>
+							<p class="text-center">dostępny w wielu rozmiarach</p>
+							<p class="text-center">cena: 1720 zł</p>
+						</div>
+						<img src="img/object-1.jpeg" class="img-responsive" alt="ubranie">
 					</div>
-					<img src="img/object-1.jpeg" class="img-responsive" alt="ubranie">
 				</div>
 			</div>
-			<div class="col-lg-4 color">
-				<div class="info">NEW</div>
-				<div id="object-2" class="object">
-					<div class="information">
-						<h4 class="text-center">Garnitur męski model XYNA</h4>
-						<p class="text-center">dostępny w wielu rozmiarach</p>
-						<p class="text-center">cena: 1720 zł</p>
+			<div class="col-sm-6 col-lg-4">
+				<div class="color">
+					<div class="info">NEW</div>
+					<div id="object-2" class="object">
+						<div class="information">
+							<h4 class="text-center">Garnitur męski model XYNA</h4>
+							<p class="text-center">dostępny w wielu rozmiarach</p>
+							<p class="text-center">cena: 1720 zł</p>
+						</div>
+						<img src="img/object-2.jpeg" class="img-responsive" alt="ubranie">
 					</div>
-					<img src="img/object-2.jpeg" class="img-responsive" alt="ubranie">
 				</div>
 			</div>
-			<div class="col-lg-4 color">
-				<div class="info">HOT</div>
-				<div id="object-3" class="object">
-					<div class="information">
-						<h4 class="text-center">Garnitur męski model XYNA</h4>
-						<p class="text-center">dostępny w wielu rozmiarach</p>
-						<p class="text-center">cena: 1720 zł</p>
+			<div class="col-sm-6 col-lg-4">
+				<div class="color">
+					<div class="info">HOT</div>
+					<div id="object-3" class="object">
+						<div class="information">
+							<h4 class="text-center">Garnitur męski model XYNA</h4>
+							<p class="text-center">dostępny w wielu rozmiarach</p>
+							<p class="text-center">cena: 1720 zł</p>
+						</div>
+						<img src="img/object-3.jpeg" class="img-responsive" alt="ubranie">
 					</div>
-					<img src="img/object-3.jpeg" class="img-responsive" alt="ubranie">
 				</div>
 			</div>
-			<div class="col-lg-4 color">
-				<div class="info">NEW</div>
-				<div id="object-1" class="object">
-					<div class="information">
-						<h4 class="text-center">Garnitur męski model XYNA</h4>
-						<p class="text-center">dostępny w wielu rozmiarach</p>
-						<p class="text-center">cena: 1720 zł</p>
+			<div class="col-sm-6 col-lg-4">
+				<div class="color">
+					<div class="info">NEW</div>
+					<div id="object-1" class="object">
+						<div class="information">
+							<h4 class="text-center">Garnitur męski model XYNA</h4>
+							<p class="text-center">dostępny w wielu rozmiarach</p>
+							<p class="text-center">cena: 1720 zł</p>
+						</div>
+						<img src="img/object-1.jpeg" class="img-responsive" alt="ubranie">
 					</div>
-					<img src="img/object-1.jpeg" class="img-responsive" alt="ubranie">
 				</div>
 			</div>
-			<div class="col-lg-4 color">
-				<div class="info">NEW</div>
-				<div id="object-2" class="object">
-					<div class="information">
-						<h4 class="text-center">Garnitur męski model XYNA</h4>
-						<p class="text-center">dostępny w wielu rozmiarach</p>
-						<p class="text-center">cena: 1720 zł</p>
+			<div class="col-sm-6 col-lg-4">
+				<div class="color">
+					<div class="info">NEW</div>
+					<div id="object-2" class="object">
+						<div class="information">
+							<h4 class="text-center">Garnitur męski model XYNA</h4>
+							<p class="text-center">dostępny w wielu rozmiarach</p>
+							<p class="text-center">cena: 1720 zł</p>
+						</div>
+						<img src="img/object-2.jpeg" class="img-responsive" alt="ubranie">
 					</div>
-					<img src="img/object-2.jpeg" class="img-responsive" alt="ubranie">
 				</div>
 			</div>
-			<div class="col-lg-4 color">
-				<div class="info">HOT</div>
-				<div id="object-3" class="object">
-					<div class="information">
-						<h4 class="text-center">Garnitur męski model XYNA</h4>
-						<p class="text-center">dostępny w wielu rozmiarach</p>
-						<p class="text-center">cena: 1720 zł</p>
+			<div class="col-sm-6 col-lg-4">
+				<div class="color">
+					<div class="info">HOT</div>
+					<div id="object-3" class="object">
+						<div class="information">
+							<h4 class="text-center">Garnitur męski model XYNA</h4>
+							<p class="text-center">dostępny w wielu rozmiarach</p>
+							<p class="text-center">cena: 1720 zł</p>
+						</div>
+						<img src="img/object-3.jpeg" class="img-responsive" alt="ubranie">
 					</div>
-					<img src="img/object-3.jpeg" class="img-responsive" alt="ubranie">
 				</div>
 			</div>
 		</div>
